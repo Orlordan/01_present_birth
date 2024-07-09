@@ -1,8 +1,6 @@
 body {
   margin: 0;
   background: #000;
-  /* display: flex;
-  justify-content: center; */
   font-family: "Bad Script", cursive;
 }
 
@@ -10,6 +8,8 @@ canvas {
   position: absolute;
   display: block;
   z-index:-2;
+  top: 40%;
+  left: 20%;
 }
 
 a {
@@ -33,7 +33,7 @@ a {
   align-items: center;
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 20%;
   z-index: 4;
 }
 h2 {
