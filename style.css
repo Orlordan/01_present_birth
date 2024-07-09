@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #000;
+  /* display: flex;
+  justify-content: center; */
+  font-family: "Bad Script", cursive;
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  z-index:-2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#copyright {
+  color: white;
+  font-family: arial;
+  font-size: 12px;
+  position: absolute; 
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+.title{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 280px;
+  left: 55px;
+  margin-top: 2 50px; 
+  background-color: none;
+  z-index: 4;
+}
+h2 {
+  /* color: transparent; */
+  margin: 0;
+  font-size: 24px; 
+  font-weight:bolder
+}
+
+h2 span {
+  animation: animate 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+  0%
+  {
+    color: #9e13d5;
+    filter: blur(0.5px) hue-rotate(10deg);
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff,
+    0 0 200px #00b3ff,
+    0 0 300px #00b3ff,
+    0 0 400px #00b3ff,
+  }
+  30%,70%
+  {
+    color: #9e13d5;
+    filter: blur(0.5px) hue-rotate(360deg);
+    text-shadow: 0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 80px #00b3ff,
+    0 0 120px #00b3ff,
+    0 0 200px #00b3ff,
+    0 0 300px #00b3ff,
+    0 0 400px #00b3ff,
+  }
+  100%
+  {
+   /* color: transparent; */
+    box-shadow: none;
+    filter: blur(1px) hue-rotate(0deg);
+  }
+
+}
